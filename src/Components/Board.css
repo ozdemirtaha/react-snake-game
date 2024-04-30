@@ -1,0 +1,49 @@
+.board {
+  outline: 2px solid rgb(134, 154, 189);
+}
+
+.row {
+  height: 35px;
+}
+
+.cell {
+  width: 35px;
+  height: 35px;
+  outline: 1px solid rgb(134, 154, 189);
+  display: inline-block;
+}
+
+
+.cell-green {
+  background-color: lawngreen;
+  animation: odul 1s infinite;
+  box-shadow:
+      0 0 19px #fff,
+      0 0 40px rgba(0, 255, 94, 0.3),
+      0 0 150px #0fa;
+
+}
+
+@keyframes odul {
+  0%,20%   {transform: scale(0.5)}
+  40%,60%  {transform: scale(1.2)}
+  80%,100% {transform: scale(0.5)}
+}
+
+
+.cell-snake {
+  background-color: red;
+}
+
+.cell-purple {
+  background-color: rgb(242, 0, 255);
+  animation: odul 1s infinite;
+  box-shadow:
+      0 0 19px #fff,
+      0 0 40px rgba(242, 0, 255, 0.3),
+      0 0 150px rgb(242, 0, 255);
+}
+
+.bonus-msg {
+  color: lawngreen!important;
+}
